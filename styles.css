@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap');
+
+button{
+    cursor: pointer;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+   
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+body{
+    -webkit-font-smoothing: none;
+}
+
+.sky-background{
+    height: 2472px;
+    background: linear-gradient(174deg, #1B53A8 10.41%, #214881 23.98%, #214881 41.98%, #43657F 88.4%);
+    z-index: 1;
+}
+.sky-background::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 2472px;
+    background: url("images/noiseEffect.png");
+    background-size: 900px;
+    z-index: 10;
+}
+
+
+
+.container{
+    max-width: 100%;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.header{
+    height: 180px;
+}
+.header .header-inside{
+    display: flex;
+    flex-direction: column;
+}
+
+.header .header-inside .logo{
+    display: flex;
+    justify-content: center;
+    height: 84px;
+    z-index: 100;
+    
+    
+}
+.logo img{
+    
+}
+
+.header .header-inside img{
+    width: 65px;
+    height: auto;
+}
+
+.header .header-inside nav{
+    display: flex;  
+    justify-content: center;
+    z-index: 100;
+    margin-left: 88px;
+}
+
+.header .header-inside .nav{
+    width: 436px;
+    height: 56px;
+    background-color: white;
+    border-radius: 80px;
+    display: flex;    
+    align-items: center;
+    justify-content: space-between;
+    filter: drop-shadow(7px 10px 4.5px rgba(0, 0, 0, 0.25));
+}
+
+.header .header-inside .nav .nav-element{
+    margin: 0 8px;
+    color: #000;
+    font-family: "Maven Pro", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 28px */
+    letter-spacing: -0.2px;
+    text-decoration: none;
+    padding: 16px;
+}
+
+.header .header-inside .nav #nav-home{
+    margin-left: 5px;
+}
+.header .header-inside .nav #nav-contacts{
+    margin-right: 5px;
+}
+
+.header .header-inside .nav .selected{
+    background: #F48A4F;
+    border-radius: 48px;
+    padding: 9px;
+}
+
+.header .header-inside nav .settings{
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 0;
+    border-radius: 100%;
+    margin-left: 32px;
+    background-color: #fff;
+    filter: drop-shadow(7px 10px 4.5px rgba(0, 0, 0, 0.25));
+}
+
+.header .header-inside nav .settings img{
+    width: 24px;
+    height: auto;
+}
+
+.hero{
+    height: 550px;
+}
+
+.hero .hero-inside{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.hero .hero-inside h1{
+    color: #FFF;
+    font-family: "Maven Pro", sans-serif;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 150px */
+    letter-spacing: -3px;
+    position: relative;
+    z-index: 100;
+}
+
+.hero .hero-inside .mail-me{
+    margin-top: 50px;
+    
+}
+
+.hero .hero-inside h4{
+    color: #FFF;
+    font-family: "Maven Pro", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 31.2px */
+    letter-spacing: -0.24px;
+    position: relative;
+    z-index: 100;
+}
+
+.hero .hero-inside h4 img{
+    color: #FFF;
+    width: 20px;
+    height: 20px;
+}
+
+.hero .hero-inside .contact-me{
+    margin-top: 20px;
+}
+
+.hero .hero-inside p{
+    color:#FFF;
+    font-family: "Maven Pro";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 28px */
+    letter-spacing: -0.2px;
+    position: relative;
+    z-index: 100; 
+}
+.hero .hero-inside p a{
+    color:#FFF;
+    font-family: "Maven Pro";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;  /* 28px */
+    letter-spacing: -0.2px;
+    position: relative;
+    z-index: 100; 
+}
+
+.projects{
+    height: 1620px;
+    position: relative;
+}
+.projects .glass{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(113deg, rgba(188, 188, 188, 0.12) 0%, rgba(89, 89, 89, 0.13) 92.87%);
+    backdrop-filter: blur(15px);
+    position: relative;
+    z-index: 99;
+}
+
+.cloud{
+    max-width: 100%;
+    width: 100%;
+    height: 1079px;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 4;
+    top: -18vw;
+    left: 0;
+}
+.cloud img{
+    width: 100%;
+}
+
