@@ -21,8 +21,8 @@ body{
 }
 
 .sky-background{
-    height: 1700px;
-    background: linear-gradient(174deg, #1B53A8 10.41%, #214881 23.98%, #214881 41.98%, #43657F 88.4%);
+    height: 2370px;
+    background: linear-gradient(174deg, #1B53A8 10.41%, #214881 23.98%, #214881 41.98%, #ffffff 60.98%, #ffffff 88.4%);
     z-index: 1;
 }
 .sky-background::before{
@@ -30,7 +30,7 @@ body{
     position: absolute;
     top: 0;
     width: 100%;
-    height: 1700px;
+    height: 2370px;
     background: url("images/noiseEffect.png");
     background-size: 900px;
     z-index: 10;
@@ -43,10 +43,10 @@ body{
     width: 1440px;
     margin-left: auto;
     margin-right: auto;
-
+    border: 2px #000000 solid;
 }
 .header{
-    height: 220px;
+    height: 142px;
 }
 .header .header-inside{
     display: flex;
@@ -88,8 +88,7 @@ body{
     filter: drop-shadow(7px 10px 4.5px rgba(0, 0, 0, 0.25));
 }
 
-.header .header-inside .nav .nav-element{
-    margin: 0 8px;
+.header .header-inside .nav .nav-element{  
     color: #000;
     font-family: "Maven Pro", sans-serif;
     font-size: 20px;
@@ -99,6 +98,16 @@ body{
     letter-spacing: -0.2px;
     text-decoration: none;
     padding: 16px;
+    text-shadow: 2px 3px 4.5px rgba(0, 0, 0, 0.2);
+    vertical-align: middle;
+    
+    transition-property: transform, padding-left;
+    transition-duration: .1s, .3s;
+}
+
+.header .header-inside .nav .nav-element:hover{  
+    transform: scale(1.05);
+
 }
 
 .header .header-inside .nav #nav-home{
@@ -109,31 +118,70 @@ body{
 }
 
 .header .header-inside .nav .selected{
-    background: #F48A4F;
+    background-color: #F48A4F;
     border-radius: 48px;
     padding: 9px;
+    filter: drop-shadow(2px 1px 4.5px rgba(0, 0, 0, 0.2));
+    color: #fff;
 }
 
-.header .header-inside nav .settings{
+.header .header-inside nav .theme{
     width: 56px;
-    height: 56px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    height: 28px;
     border: 0;
-    border-radius: 100%;
+    border-radius: 48px;
     margin-left: 32px;
-    background-color: #fff;
+    background-color: #ffffff;
     filter: drop-shadow(7px 10px 4.5px rgba(0, 0, 0, 0.25));
+    display: flex;
+    align-items: center;
+    align-self: center;
 }
 
-.header .header-inside nav .settings img{
-    width: 24px;
-    height: auto;
+.header .header-inside nav .theme .theme-button{
+    width: 23px;
+    height: 23px;
+    background-color: #F48A4F;
+    border-radius: 100%;
+    border: 0;
+    margin-left: 3px;
+    transition: transform, .2s;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(1), translate(0);
+    filter: drop-shadow(2px 1px 4.5px rgba(0, 0, 0, .25));
+}
+
+.header .header-inside nav .theme img{
+    width: 22px;
+    height: 22px;
+    padding-left: 6px;
+}
+
+.header .header-inside nav .theme .sun:hover{
+   transform: scale(1.1);
+}
+
+.header .header-inside nav .theme .dark{
+    position: absolute;
+    width: 23px;
+    height: 23px;
+}
+
+.header .header-inside nav .theme .moon{
+    transform: translate(27px);
+}
+
+.header .header-inside nav .theme .moon:hover{
+    transform: scale(1.1) translate(27px);
+    margin: 0;
 }
 
 .hero{
     height: 550px;
+    margin-top: 58px;
 }
 
 .hero .hero-inside{
@@ -179,30 +227,31 @@ body{
 }
 
 .hero .hero-inside .contact-me{
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .hero .hero-inside p{
     color:#FFF;
-    font-family: "Maven Pro";
+    font-family: "Maven Pro", sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 100%; /* 28px */
+    line-height: 100%; /* 28    px */
     letter-spacing: -0.2px;
     position: relative;
     z-index: 100; 
 }
 .hero .hero-inside p a{
     color:#FFF;
-    font-family: "Maven Pro";
+    font-family: "Maven Pro", sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%;  /* 28px */
+    line-height: 130%;  /* 28px */
     letter-spacing: -0.2px;
     position: relative;
     z-index: 100; 
+    text-decoration: none;
 }
 
 .projects{
@@ -212,9 +261,9 @@ body{
 .projects .glass{
     width: 100%;
     height: 100%;
-    background: linear-gradient(113deg, rgba(188, 188, 188, 0) 0%, rgba(89, 89, 89, 0.13) 92.87%);
+    background: linear-gradient(113deg, rgba(188, 188, 188, 0.12) 0%, rgba(155, 155, 155, 0.13) 92.87%);
     backdrop-filter: blur(15px);
-    position: relative;
+    position: absolute;
     z-index: 99;
 }
 
@@ -226,23 +275,49 @@ body{
     position: absolute;
     z-index: 4;
     top: -18vw;
+    
     left: 0;
 }
 .cloud img{
     width: 100%;
 }
 
-.white-gradient{
+.white-background{
     width: 100%;
-    height: 1000px;
+    height: 1550px;
+    background: linear-gradient(#ffffff00, #fff 25%);
     position: absolute;
-    bottom: -700px;
-    background: linear-gradient(#ffffff00, #fff 50%);
+    bottom: 0;
 }
 
+.projects .projects-inside{
+    position: relative;
+    margin-top: 116px;
+    z-index: 100;
+}
 
-.blog{
-    width: 100%;
-    height: 700px;
-    background-color: #fff;
+.projects .projects-inside h2{
+    color: #083775;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Maven Pro", sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 57.6px */
+    letter-spacing: -0.48px;
+    
+}
+
+.projects .projects-inside p{
+    color: #083775;
+    font-family: "Maven Pro", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 28px */
+    letter-spacing: -0.2px;
+    position: relative;
+    z-index: 100; 
+    width: 520px;
+    margin-top: 25px;
 }
