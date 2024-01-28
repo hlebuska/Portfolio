@@ -31,7 +31,7 @@ body{
     top: 0;
     width: 100%;
     height: 2619px;
-    background: url("public/images/noiseEffect.png");
+    background: url("images/noiseEffect.png");
     background-size: 900px;
     z-index: 10;
 }
@@ -391,7 +391,7 @@ body{
 .links-background::before{
     content: "";
     height: 249px;
-    background: url("public/images/noiseEffect.png");
+    background: url("images/noiseEffect.png");
     background-size: 900px;
     z-index: 10;    
 }
