@@ -31,7 +31,7 @@ body{
     top: 0;
     width: 100%;
     height: 2619px;
-    background: url("images/noiseEffect.png");
+    background: url("public/images/noiseEffect.png");
     background-size: 900px;
     z-index: 10;
 }
@@ -382,6 +382,21 @@ body{
     margin-top: 25px;
 }
 
+.projects .projects-inside .project{
+    height: 240px;
+    background: linear-gradient(#083775, #194383);
+    display: flex;
+    position: relative;
+    z-index: 1
+}
+
+
+.projects .projects-inside .project img{
+    width: 230px;
+    height: 230px;
+    border-radius: 36px;
+}
+
 .links-background{
     height: 249px;
     background: linear-gradient(#083775, #194383);
@@ -391,7 +406,7 @@ body{
 .links-background::before{
     content: "";
     height: 249px;
-    background: url("images/noiseEffect.png");
+    background: url("public/images/noiseEffect.png");
     background-size: 900px;
     z-index: 10;    
 }

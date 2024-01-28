@@ -369,7 +369,7 @@ body{
 }
 
 .projects .projects-inside p{
-    color: #083775;
+    color: #750808;
     font-family: "Maven Pro", sans-serif;
     font-size: 20px;
     font-style: normal;
@@ -380,6 +380,12 @@ body{
     z-index: 100; 
     width: 520px;
     margin-top: 25px;
+}
+
+.projects .projects-inside .project{
+    height: 120px;
+    background-color: #000;
+    z-index: 100;
 }
 
 .links-background{
