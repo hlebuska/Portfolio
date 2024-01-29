@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="public/css/styles.css">
+        <link rel="stylesheet" href="styles.css">
         <title>Gleb Vassyutinskiy</title>
     </head>
     <body> 
@@ -11,7 +11,7 @@
             <div class="sky-background">
                 <section class="header">
                     <div class="header-inside container">
-                        <div class="logo"><img src="public/images/logo_GV.svg" alt=""></div>
+                        <div class="logo"><img src="images/logo_GV.svg" alt=""></div>
                         <nav>
                             <div class="nav">
                                 <a class="nav-element selected" href="#" id="nav-home">Home</a>
@@ -20,14 +20,14 @@
                                 <a class="nav-element" href="#" id="nav-contacts">Contact</a>
                             </div>
                             <button class="theme" id="theme">
-                                <img class="dark" src="public/images/icon_moon.svg" alt="Dark theme">
+                                <img class="dark" src="images/icon_moon.svg" alt="Dark theme">
                                 <div class="theme-button sun" id="theme-button"></div>
-                                <img class="light" src="public/images/icon_sun.svg" alt="Light theme">
+                                <img class="light" src="images/icon_sun.svg" alt="Light theme">
                                 <div class="discription"><p>Light theme</p></div>
                             </button>
                             <div class="languages">
-                                <button><img src="public/images/icon_english.svg" alt=""></button>
-                                <button><img src="public/images/icon_russian.svg" alt=""></button>
+                                <button><img src="images/icon_english.svg" alt=""></button>
+                                <button><img src="images/icon_russian.svg" alt=""></button>
                             </div>
                         </nav>
                     </div>                    
@@ -36,7 +36,7 @@
                     <div class="hero-inside container">
                         <h1>Hi! My name <br> is Gleb.</h1>
                         <div class="mail-me">
-                            <h4>front-end developer from Almaty, Kazakhstan. <a href="https://www.google.com/maps/place/%D0%90%D0%BB%D0%BC%D0%B0%D1%82%D1%8B" target="_blank"><img src="public/images/icon_geo.svg" alt="Almaty, Kazakhstan"></a></h4>
+                            <h4>front-end developer from Almaty, Kazakhstan. <a href="https://www.google.com/maps/place/%D0%90%D0%BB%D0%BC%D0%B0%D1%82%D1%8B" target="_blank"><img src="images/icon_geo.svg" alt="Almaty, Kazakhstan"></a></h4>
                             <div class="contact-me-div">
                                 <p><a href="mailto:g.v.vass@gmail.com">Contact me!</a></p>
                                 <p><a href="mailto:g.v.vass@gmail.com">g.v.vass@gmail.com</a></p>
@@ -46,22 +46,34 @@
                 </section>
                 <section class="projects">
                         <div class="cloud">
-                            <img src="public/images/clouds.png" alt="">
+                            <img src="images/clouds.png" alt="">
                         </div>
                         <div class="glass">
                             <div class="projects-inside container">
                                 <h2>Projects</h2>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo deserunt aliquid adipisci quia expedita illum at perferendis excepturi veritatis tenetur nam, vitae, fuga nesciunt labore ducimus delectus exercitationem consequuntur atque?</p>
                                 <div class="project">
-                                    <img src="public/images/adaptive-cover.png" alt="Adaptive 1">
-                                    <div class="project-description">
-                                        <h2>Adaptive 1</h2>
-                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, ullam explicabo perferendis tempora atque tempore corporis alias nulla suscipit laudantium voluptatem, assumenda praesentium eaque officia vitae magnam voluptates dicta? Aut.</p>
+                                    <div class="project-background">
+                                            
+                                            <img src="images/adaptive-cover.png" alt="Adaptive 1">
+                                        <div class="project-description">
+                                            <h2>Adaptive 1
+                                                <p> SabTrans Website.
+                                                My first website with adaptive layout. Design works properly on all 
+                                                Technologies used: HTML, CSS, JavaScript.
+                                              </p>
+                                            </h2>
+                                            
+                                            <div>
+                                                <a class="git-link" href="https://github.com/hlebuska/SabTrans-Adaptive-" target="_blank"><p>github <img src="images/icon_github.svg" alt=""></p></a>
+                                                <p class="date">Last edited: 21.01.2024</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="white-background"></div>
-                        </div>          
+                        </div>                
                     </div>
                 </section>          
             </div>  
@@ -92,6 +104,6 @@
             </div>
         </footer>
     </body>
-    <script src="public/js/nav-script.js"></script>
-    <script src="public/js/theme-script.js"></script>
+    <script src="nav-script.js"></script>
+    <script src="theme-script.js"></script>
 </html>
